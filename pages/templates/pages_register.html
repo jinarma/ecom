@@ -1,0 +1,12 @@
+{% extends 'pages_home.html' %}
+
+{% block content %}
+<form action="" method="POST">{% csrf_token %}
+	{{ form.as_p }}
+	<!-- {{ object.first_name }}
+	{{ object.last_name }} -->
+	<!-- {{ object.complete_name }} -->
+	<!-- <button>Send OTP</button> -->
+	<input type="submit" value="Save">
+</form>
+{% endblock content %}
